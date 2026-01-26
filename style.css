@@ -1,0 +1,109 @@
+/* Google Font (optional but recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Main container */
+.container{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game board */
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    background: rgba(255,255,255,0.15);
+    padding: 1.5vmin;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Boxes */
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    font-size: 7vmin;
+    font-weight: 600;
+    color: #4f46e5;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.box:hover{
+    transform: scale(1.05);
+    background: #eef2ff;
+}
+
+.box:active{
+    transform: scale(0.95);
+}
+
+/* Buttons */
+#reset-btn,
+#new-btn{
+    margin-top: 1.5rem;
+    padding: 0.9rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #ffffff;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+#reset-btn:hover,
+#new-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+/* Winner message */
+#msg{
+    font-size: 4vmin;
+    font-weight: 600;
+    color: #facc15;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Message container */
+.msg-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Hide utility */
+.hide{
+    display: none;
+}
+
